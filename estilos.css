@@ -16,7 +16,11 @@ html {
 a {
     text-decoration:none;
     color: rgb(51, 50, 50);
+} 
+span{
+    font-size: 1.3rem;
 }
+
 .none {
     display: none;
 }
@@ -107,6 +111,9 @@ a {
 }
 .main .section .section-entrada .entrada-valores input {
     width: 4rem;
+}
+.main .section .section-entrada form .centro{
+    margin: 2rem 0;
 }
 .main .section .section-entrada .a-valores {
     display: flex;
