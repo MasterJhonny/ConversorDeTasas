@@ -1,0 +1,139 @@
+:root {
+    --colorPrimary: #f8eded;
+    --colorSecondary: #99154e;
+    --colorHover: #f6dfeb;
+    --colorActive: #ffbbcc;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family:'Roboto Mono', monospace;
+    font-size:62.5%;
+}
+a {
+    text-decoration:none;
+    color: rgb(51, 50, 50);
+}
+.none {
+    display: none;
+}
+.nav-item {
+    background-color: #f8eded;
+}
+.active {
+    background-color: var(--colorActive);
+}
+.header {
+    width: 100%;
+    padding: .7rem 0;
+    background-color: var(--colorPrimary);
+}
+.header .title-menu {
+    width: 100%;
+    height: 2rem;
+    display:flex;
+    flex-wrap: nowrap;
+}
+.header .title {
+    flex: 1 85%;
+    display: flex;
+    justify-content: center;
+}
+.header .title h4{
+    font-size:1.5rem;
+    
+}
+.header .menu {
+    flex: 1 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header .menu .btn {
+    width: 2.5rem;
+    border: 0;
+    font-size: 2rem;
+    color: var(--colorSecondary);
+    margin-right: .7rem;
+    background-color: var(--colorPrimary);
+}
+.header .nav {
+    margin-top: 0.7rem;
+    background-color: #f8eded;
+}
+.header .nav ul {
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    text-align:center;
+}
+.header .nav ul .nav-item {
+    border:0;
+    padding: .7rem;
+}
+.main {
+    margin-top: 2rem;
+}
+
+.main .section .section-entrada {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.main .section .section-entrada h5 {
+
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--colorSecondary)
+}
+ 
+.main .section .section-entrada form {
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.main .section .section-entrada .entrada-valores {
+    display: flex;
+    flex-direction: column;
+}
+.main .section .section-entrada .entrada-valores input {
+    width: 4rem;
+}
+.main .section .section-entrada .a-valores {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .section .section-entrada .btn-calcular {
+    width: 8rem;
+    padding: .3rem .4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: .3rem;
+    margin: 1.5rem 0;
+    background-color: var(--colorPrimary)
+}
+.main .section .section-entrada .btn-calcular:hover {
+    background-color: var(--colorHover)
+}
+.main .section .section-entrada .btn-calcular:active {
+    background-color: var(--colorActive)
+}
+
+.main .section .section-salida {
+    display: flex;
+    justify-content:center;
+}
+
+.main .section .section-salida p {
+    width: 90%;
+    height: 7rem;
+    border: 2px dotted #ffc93c;
+    background-color:var(--colorPrimary);
+    text-align: center;
+}

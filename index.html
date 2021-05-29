@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasas Equivalentes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b9dfdc6dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title-menu">
+            <div class="title">
+                <h4>Conversor de Tasas</h4>
+            </div>
+            <div class="menu">
+                <button class="btn" id="abrir"><i class="fas fa-bars"></i></button>
+                <button class="btn none" id="cerrar"><i class="fas fa-times"></i></i></button>
+            </div>
+        </div>
+        <nav class="nav none" id="nav">
+            <ul>
+                <button class="nav-item active" id="item1">Nominal a Nominal</button>
+                <button class="nav-item" id="item2">TEA a Nominal</button>
+                <button class="nav-item" id="item3">Nominal a TEA</button>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="section" id="sec1">
+            <section class="section-entrada">
+                <h5>De Tasa Nominal a Nominal</h5>
+                <form action="nn">
+                    <div class="entrada-valores">
+                        <label for="nn">
+                            <span>De una tasa nominal del:</span>
+                            <input type="number" max="100" id="valor1">
+                            <span>%</span>
+                        </label>
+                        <label for="nn">
+                            <span>con capitalizacion:</span>
+                            <select name="cap1" id="cap1">
+                                <option value="Anual">Anual</option>
+                                <option value="Semestral">Semestral</option>
+                                <option value="Cuatrimestral">Cuatrimestral</option>
+                                <option value="Trimestral">Trimestral</option>
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Mensual">Mensual</option>
+                            </select>
+                        </label>
+                    </div>
+                    <span><b>a</b></span>
+                    <div class="a-valores">
+                        <span>Una tasa nominal del: <b>?</b> % </span>
+                        <label for="nn">
+                            <span>con capitalizacion:</span>
+                            <select name="capp1" id="capp1">
+                                <option value="Anual">Anual</option>
+                                <option value="Semestral">Semestral</option>
+                                <option value="Cuatrimestral">Cuatrimestral</option>
+                                <option value="Trimestral">Trimestral</option>
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Mensual">Mensual</option>
+                            </select>
+                        </label>
+                    </div>
+                </form>
+                <button id="calcular1" class="btn-calcular">Calcular</button>
+            </section>
+            <section class="section-salida">
+                <p id="salida1"></p>
+            </section>
+        </div>
+        <div class="section none" id="sec2">
+            <section class="section-entrada">
+                <h5>De Tasa Efectiva a Nominal</h5>
+                <form action="en">
+                    <div class="entrada-valores">
+                        <label for="en">
+                            <span>DE una tasa del: </span>
+                            <input type="number" max="100" id="valor2">
+                            <span>%</span>
+                        </label>
+                        <label for="en">
+                            <span>Efectivo:</span>
+                            <select name="cap2" id="cap2">
+                                <option value="Anual">Anual</option>
+                                <option value="Semestral">Semestral</option>
+                                <option value="Cuatrimestral">Cuatrimestral</option>
+                                <option value="Trimestral">Trimestral</option>
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Mensual">Mensual</option>
+                            </select>
+                        </label>
+                    </div>
+                    <span><b>a</b></span>
+                    <div class="a-valores">
+                        <span>Una tasa nominal del <b>?</b> %</span>
+                        <label for="en">
+                            <span>con capitalizacion:</span>
+                            <select name="capp2" id="capp2">
+                                <option value="Anual">Anual</option>
+                                <option value="Semestral">Semestral</option>
+                                <option value="Cuatrimestral">Cuatrimestral</option>
+                                <option value="Trimestral">Trimestral</option>
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Mensual">Mensual</option>
+                            </select>
+                        </label>
+                    </div>
+                </form>
+                <button id="calcular2" class="btn-calcular">Calcular</button>
+            </section>
+            <section class="section-salida">
+                <p id="salida2"></p>
+            </section>
+        </div>
+        <div class="section none" id="sec3">
+            <section class="section-entrada">
+                <h5>De Nominal a Tasa Efectiva</h5>
+                <form action="tasas">
+                    <div class="entrada-valores">
+                        <label for="tasas">
+                            <span>De una tasa nominal del:</span>
+                            <input type="number" max="100" id="valor3">
+                            <span>%</span>
+                        </label>
+                        <label for="tasas">
+                            <span>con capitalizacion:</span>
+                            <select name="cap3" id="cap3">
+                                <option value="Anual">Anual</option>
+                                <option value="Semestral">Semestral</option>
+                                <option value="Cuatrimestral">Cuatrimestral</option>
+                                <option value="Trimestral">Trimestral</option>
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Mensual">Mensual</option>
+                            </select>
+                        </label>
+                    </div>
+                    <span><b>a</b></span>
+                    <div class="a-valores">
+                        <span>Una tasa del <b>?</b> %</span>
+                        <label for="tasas">
+                            <span>Efectivo</span>
+                            <select name="capp3" id="capp3">
+                                <option value="Anual">Anual</option>
+                                <option value="Semestral">Semestral</option>
+                                <option value="Cuatrimestral">Cuatrimestral</option>
+                                <option value="Trimestral">Trimestral</option>
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Mensual">Mensual</option>
+                            </select>
+                        </label>
+                    </div>
+                </form>
+                <button id="calcular3" class="btn-calcular">Calcular</button>
+            </section>
+            <section class="section-salida">
+                <p id="salida3"></p>
+            </section>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
