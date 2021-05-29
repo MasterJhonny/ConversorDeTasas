@@ -84,7 +84,6 @@ a {
 }
 
 .main .section .section-entrada h5 {
-
     margin: 1rem 0;
     font-size: 1.1rem;
     font-weight: 400;
@@ -93,7 +92,13 @@ a {
  
 .main .section .section-entrada form {
     width: 90%;
-    margin-top: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .section .section-entrada form select {
+    width: 8.5rem;
 }
 
 .main .section .section-entrada .entrada-valores {
@@ -132,8 +137,45 @@ a {
 
 .main .section .section-salida p {
     width: 90%;
+    max-width: 550px;
     height: 7rem;
     border: 2px dotted #ffc93c;
     background-color:var(--colorPrimary);
     text-align: center;
+}
+
+@media (min-width: 550px) {
+    .main .section .section-entrada form {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 3rem 0;
+    }
+}
+@media (min-width: 900px) {
+    .header .title-menu .menu {
+        display:none;
+    }
+    .header .nav {
+        display: flex;
+    }
+    .header .nav ul {
+        flex-direction: row;
+
+    }
+    .header .nav ul .nav-item {
+        border-radius: .3rem;
+        margin-left: .5rem;
+    }
+    .main .section .section-entrada form {
+        margin: 5rem 0; 
+    }
+    .header .title h4{
+        font-size: 1.7rem;
+    }
+    .main .section .section-entrada h5{
+        font-size: 1.4rem;
+    }
+    span {
+        font-size: 1.2rem;
+    }
 }
