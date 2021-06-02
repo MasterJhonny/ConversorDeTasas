@@ -62,6 +62,15 @@ span{
     color: var(--colorSecondary);
     margin-right: .7rem;
     background-color: var(--colorPrimary);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+/* .header .menu .open:active {
+    animation: bounce 2s ease-in-out infinite;
+} */
+.header .menu .close:hover {
+    opacity: 3;
+    transform: rotate(360deg);
 }
 .header .nav {
     margin-top: 0.7rem;
