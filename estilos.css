@@ -58,7 +58,7 @@ span{
 .header .menu .btn {
     width: 2.5rem;
     border: 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--colorSecondary);
     margin-right: .7rem;
     background-color: var(--colorPrimary);
@@ -86,6 +86,10 @@ span{
     border:0;
     padding: .7rem;
 }
+.header .nav ul .nav-item:hover{
+    background-color: rgb(210, 188, 244, .3);
+    box-shadow: 0 0 1px 1px rgba(159, 111, 236);
+}
 .main {
     margin-top: 2rem;
 }
@@ -112,6 +116,7 @@ span{
 
 .main .section .section-entrada form select {
     width: 8.5rem;
+    height: 2.4rem;
 }
 
 .main .section .section-entrada .entrada-valores {
@@ -119,20 +124,27 @@ span{
     flex-direction: column;
 }
 .main .section .section-entrada .entrada-valores input {
-    width: 4rem;
+    width: 4.2rem;
+    height:2.4rem;
+    padding: 0 .2rem;
 }
 .main .section .section-entrada form .centro{
     margin: 2rem 0;
+    text-align: center;
 }
 .main .section .section-entrada .a-valores {
     display: flex;
     flex-direction: column;
 }
 
+.main .section .ctn {
+    align-items: center;
+}
+
 .main .section .section-entrada .btn-calcular {
-    width: 8rem;
-    padding: .3rem .4rem;
-    font-size: 1.2rem;
+    width: auto;
+    padding: .7rem .8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border: 0;
     border-radius: .3rem;
@@ -140,7 +152,8 @@ span{
     background-color: var(--colorPrimary)
 }
 .main .section .section-entrada .btn-calcular:hover {
-    background-color: var(--colorHover)
+    background-color: rgb(210, 188, 244, .3);
+    box-shadow: 0 0 1px 1px rgba(159, 111, 236);
 }
 .main .section .section-entrada .btn-calcular:active {
     background-color: var(--colorActive)
@@ -158,9 +171,33 @@ span{
     border: 2px dotted #ffc93c;
     background-color:var(--colorPrimary);
     text-align: center;
+    font-size: 1.5rem;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 330px) {
+    .header .title h4{
+        font-size: 1.7rem;
+    }
+    .main .section .section-entrada h5{
+        font-size: 1.4rem;
+    }
+    span {
+        font-size: 1.5rem;
+    }
+    .main .section .section-entrada form select, .main .section .section-entrada .entrada-valores input {
+        font-size: 1.5rem;
+    }
+    .main .section .section-entrada .btn-calcular{
+        font-size: 1.7rem;
+        padding: .8rem .9rem;
+        text-align: center;
+    }
+    .main .section .section-salida p{
+        font-size:       1.6rem;
+    }             
+}
+
+@media (min-width: 620px) {
     .main .section .section-entrada form {
         flex-direction: row;
         justify-content: space-around;
@@ -186,12 +223,18 @@ span{
         margin: 5rem 0; 
     }
     .header .title h4{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     .main .section .section-entrada h5{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
     span {
-        font-size: 1.2rem;
+        font-size: 1.7inprem;
+    }
+    .main .section .section-salida p{
+        font-size: 1.7rem;
+    }
+    .main .section .section-entrada .entrada-valores input {
+        width: 6rem;
     }
 }
